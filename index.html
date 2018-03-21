@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Background Colours Project</title>
+
+	<style>
+
+	#rounded1{
+		background: rgba(255, 0, 0, 0.3);
+		color: white;
+		width: 200px;
+		height: 100px;
+		padding: 30px;
+		border-radius: 10px;
+	}
+
+	#rounded2{
+		background: hsl(120, 100%, 75%);
+		color: white;
+		width: 200px;
+		height: 100px;
+		padding: 30px;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	#rounded3{
+		background: hsla(120, 100%, 50%, 0.3);
+		color: white;
+		width: 200px;
+		height: 100px;
+		padding: 30px;
+		border-radius: 50%;
+		border: 3px solid black;
+	}
+
+	img {
+		border-radius: 50%;
+	} 
+
+	#border-img {
+		border: 10px solid transparent;
+		padding: 15px;
+		border-image: url(border.png) 30 round;
+	}
+
+	#my-bg{
+		background-image: url(img_flwr.gif), url(paper.gif);
+		background-position: right bottom, top left;
+		background-repeat: no-repeat, repeat;
+		padding: 15px 200px 15px 15px;
+		background-size: 100px 100px;
+	}
+
+	#grad1{
+		width: 200px;
+		height: 100px;
+		/* Keep the below from IE browsers less than 9 */
+		background: blue;
+		background: linear-gradient(blue, black);
+	}
+
+	#grad2{
+		width: 200px;
+		height: 100px;
+		/* Keep the below from IE browsers less than 9 */
+		background: blue;
+		background: linear-gradient(to right, blue, black);
+	}
+
+	#grad3{
+		width: 200px;
+		height: 100px;
+		/* Keep the below from IE browsers less than 9 */
+		background: blue;
+		background: linear-gradient(to bottom right, blue, black);
+	}
+
+	#grad4{
+		width: 200px;
+		height: 100px;
+		/* Keep the below from IE browsers less than 9 */
+		background: blue;
+		background: radial-gradient(white 5%, blue 15%, black 60%);
+	}
+
+</style>
+
+</head>
+<body>
+
+	<div id="rounded1">Rounded Corners 1</div>
+	<br>
+	<div id="rounded2">Rounded Corners 2</div>
+	<br>
+	<div id="rounded3">Rounded Corners 3</div>
+	<br>
+	<img src="bird.jpg">
+	<br>
+	<div id="border-img">This is a image border</div>
+	<br>
+	<div id="my-bg">
+		<h1>Welcome</h1>
+		<p>
+			There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		</p>
+	</div>
+	<br>
+	<div id="grad1"></div>
+	<br>
+	<div id="grad2"></div>
+	<br>
+	<div id="grad3"></div>
+	<br>
+	<div id="grad4"></div>
+	<br>
+</body>
+</html>
